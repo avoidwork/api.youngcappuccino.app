@@ -1,0 +1,43 @@
+{
+  "coerce": false,
+  "headers": {
+    "cache-control": "private, max-age=1800, must-revalidate"
+  },
+  "id": "yc",
+  "logging": {
+    "enabled": true,
+    "level": "info",
+    "stack": true,
+    "stackWire": false
+  },
+  "maxBytes": 0,
+  "origins": [
+    "https://youngcappuccino.app",
+    "https://www.youngcappuccino.app"
+  ],
+  "port": 8000,
+  "rate": {
+    "enabled": true,
+    "limit": 2,
+    "reset": 10
+  },
+  "security": {
+    "key": "x-csrf-token",
+    "secret": "",
+    "csrf": true,
+    "csp": null,
+    "xframe": "SAMEORIGIN",
+    "p3p": "",
+    "xssProtection": true
+  },
+  "seed": 223,
+  "session": {
+    "secret": "",
+    "store": "redis",
+    "redis": {
+      "host": ""
+    }
+  },
+  "title": "Young Cappuccino API",
+  "uid": 33
+}
