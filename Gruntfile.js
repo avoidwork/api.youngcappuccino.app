@@ -4,7 +4,7 @@ const fs = require("fs"),
 module.exports = function (grunt) {
 	grunt.initConfig({
 		eslint: {
-			target: ["Gruntfile.js", "index.js", "lib/**/*.js", "www/**/!bundle.js"]
+			target: ["Gruntfile.js", "index.js", "lib/**/*.js"]
 		}
 	});
 
