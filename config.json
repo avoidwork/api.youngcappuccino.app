@@ -1,7 +1,7 @@
 {
   "coerce": false,
   "headers": {
-    "cache-control": "private, max-age=1800, must-revalidate"
+    "cache-control": "public, max-age=1800, must-revalidate"
   },
   "id": "yc",
   "logging": {
@@ -35,7 +35,8 @@
     "secret": "",
     "store": "redis",
     "redis": {
-      "host": ""
+      "host": "",
+      "port": 6379
     }
   },
   "title": "Young Cappuccino API",

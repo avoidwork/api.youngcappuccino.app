@@ -7,14 +7,16 @@ Login to docker, & pull latest image: `avoidwork/youngcappuccino-api:latest`
 #### Environment Variables
 
 ```
-YC_GOOGLE_MAPS_KEY ""
-YC_SECURITY_SECRET ""
-YC_SESSION_REDIS_HOST ""
-YC_SESSION_SECRET ""
+YC_GOOGLE_MAPS_KEY str
+YC_SECURITY_SECRET str
+YC_SEED int (optional: 233)
+YC_SESSION_REDIS_HOST str
+YC_SESSION_REDIS_PORT int (optional: 6379)
+YC_SESSION_SECRET str
 ```
 
 #### Running Container
-`docker run --name=yc -e YC_GOOGLE_MAPS_KEY=CHANGE_ME -e YC_SECURITY_SECRET=CHANGE_ME -e YC_SESSION_REDIS_HOST=CHANGE_ME -e YC_SESSION_SECRET=CHANGE_ME -p 8000:8000 -d --cpus=1 --memory-reservation=250m --memory=500m --restart unless-stopped avoidwork/youngcappuccino-api:latest`
+`docker run --name=yc -e YC_GOOGLE_MAPS_KEY=CHANGEME -e YC_SECURITY_SECRET=CHANGEME -e YC_SESSION_REDIS_HOST=CHANGEME -e YC_SESSION_SECRET=CHANGEME -p 8000:8000 -d --cpus=1 --memory-reservation=128m --memory=256m --restart unless-stopped avoidwork/youngcappuccino-api:latest`
 
 ### API Routes
 Requests must include an `Origin` header value of `https://youngcappuccino.app` to pass middleware validation (mimic production CORS requests)

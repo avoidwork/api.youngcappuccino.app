@@ -15,6 +15,14 @@ config.security.secret = process.env.YC_SECURITY_SECRET;
 config.session.secret = process.env.YC_SESSION_SECRET;
 config.session.redis.host = process.env.YC_SESSION_REDIS_HOST;
 
+if ("YC_SEED" in process.env) {
+	config.seed = parseInt(process.env.YC_SEED, 10);
+}
+
+if ("YC_SESSION_REDIS_PORT" in process.env) {
+	config.session.redis.port = parseInt(process.env.YC_SESSION_REDIS_PORT, 10);
+}
+
 const app = tenso(config);
 
 module.exports = app.start();
