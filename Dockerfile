@@ -11,7 +11,7 @@ RUN apk add --no-cache --virtual .gyp \
         python \
         make \
         g++ \
-    && npm ci \
+    && npm install --production \
     && apk del .gyp
 
 # Bundle app source
