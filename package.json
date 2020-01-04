@@ -1,6 +1,6 @@
 {
   "name": "api.youngcappuccino.app",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "API for Young Cappuccino",
   "main": "index.js",
   "scripts": {

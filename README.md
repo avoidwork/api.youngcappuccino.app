@@ -17,6 +17,8 @@ YC_SESSION_SECRET ""
 `docker run --name=yc -e YC_GOOGLE_MAPS_KEY=CHANGE_ME -e YC_SECURITY_SECRET=CHANGE_ME -e YC_SESSION_REDIS_HOST=CHANGE_ME -e YC_SESSION_SECRET=CHANGE_ME -p 8000:8000 -d --cpus=1 --memory-reservation=250m --memory=500m --restart unless-stopped avoidwork/youngcappuccino-api:latest`
 
 ### API Routes
+Requests must include an `Origin` header value of `https://youngcappuccino.app` to pass middleware validation (mimic production CORS requests)
+
 #### / (GET)
 Returns `["api"]`
 
