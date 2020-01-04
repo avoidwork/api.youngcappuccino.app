@@ -1,3 +1,6 @@
 .eslintrc
-Gruntfile.js
 .git?
+Dockerfile
+Gruntfile.js
+LICENSE
+README.md
