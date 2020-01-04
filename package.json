@@ -19,7 +19,7 @@
     "cappuccino"
   ],
   "author": "Jason Mulligan <jason.mulligan@avoidwork.com>",
-  "license": "ISC",
+  "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://github.com/avoidwork/api.youngcappuccino.app/issues"
   },
