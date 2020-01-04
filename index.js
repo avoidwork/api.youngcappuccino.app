@@ -15,6 +15,12 @@ config.security.secret = process.env.YC_SECURITY_SECRET;
 config.session.secret = process.env.YC_SESSION_SECRET;
 config.session.redis.host = process.env.YC_SESSION_REDIS_HOST;
 
+if ("YC_CORS_ORIGINS" in process.env) {
+	const env = process.env.YC_CORS_ORIGINS;
+
+	config.origins = env.length > 0 ? env.split(",") : [];
+}
+
 if ("YC_SEED" in process.env) {
 	config.seed = parseInt(process.env.YC_SEED, 10);
 }

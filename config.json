@@ -11,10 +11,7 @@
     "stackWire": false
   },
   "maxBytes": 0,
-  "origins": [
-    "https://youngcappuccino.app",
-    "https://www.youngcappuccino.app"
-  ],
+  "origins": [],
   "port": 8000,
   "rate": {
     "enabled": true,
