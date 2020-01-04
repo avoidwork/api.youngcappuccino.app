@@ -1,7 +1,7 @@
 {
   "coerce": false,
   "headers": {
-    "cache-control": "public, max-age=1800, must-revalidate"
+    "cache-control": "private, max-age=1800, must-revalidate"
   },
   "id": "yc",
   "logging": {
